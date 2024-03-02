@@ -101,7 +101,7 @@ function M.open_window(content, filetype, tokens)
 	M.save_buffer_to_file()
 end
 
-function M.chatgpt(input)
+function M.magic(input)
 	M.load_buffer_from_file()
 
 	local api_key = config.api_key
