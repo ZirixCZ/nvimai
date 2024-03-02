@@ -101,7 +101,7 @@ function M.open_window(content, filetype, tokens)
 	M.save_buffer_to_file()
 end
 
-function M.magic(input)
+function M.chatgpt(input)
 	M.load_buffer_from_file()
 
 	local api_key = config.api_key
@@ -109,7 +109,27 @@ function M.magic(input)
 	local max_tokens = config.max_tokens
 
 	if api_key == "" then
-		M.open_window('No API key found. Please set it up with require().setup({api_key: "yourapikey"})', "", 0)
+		local setupMessage = [[
+No API key found. Please set it up with:
+
+Lazy:
+{
+  "zirixcz/nvimai",
+  opts = {
+    model = "gpt-4-0125-preview",
+    max_tokens = 1000,
+    api_key = "yourapikey",
+  },
+}
+
+Or with require:
+require('nvimai').setup({
+  model = "gpt-4-0125-preview",
+  max_tokens = 1000,
+  api_key = "yourapikey"
+})
+    ]]
+		M.open_window(setupMessage, "", 0)
 		return
 	end
 
