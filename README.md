@@ -4,6 +4,8 @@
 
 It's a plugin made to help with an AI addiction. Now we can code confidently knowing that at every moment we can go for the quick `:NAI tell me how the universe was created` to calm ourselves down a bit. Definitely being serious there.
 
+https://github.com/ZirixCZ/nvimai/assets/49836430/ffc4940e-07d9-4229-81c1-3727b017495f
+
 ## I want it ay!
 
 Alrighty, it's very simple to install actually! Installing is not the entirety of it unfortunately. _You also have to give money to Microsoft_ ssssh! Now that you're aware, we shall start :nerdwithverybigglasses:
@@ -55,8 +57,4 @@ Reload nvim and voilà, you should be able to type the prompt I mentioned at the
 ## Next steps 
 Even though I used it in my code examples you might prefer some other, cheaper model. You can find [them all listed here](https://openai.com/pricing). Just copy their name and paste it into the config as `model`.
 
-
-## Showcase 
-
-https://github.com/ZirixCZ/nvimai/assets/49836430/ffc4940e-07d9-4229-81c1-3727b017495f
 
