@@ -52,20 +52,7 @@ You'll also have to add credits to your account. At the time of writing this the
 
 Reload nvim and voilà, you should be able to type the prompt I mentioned at the beginning `:NAI tell me how the universe was created` and get a response back, calming your cravings.
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+## Showcase 
 
-static int \_\_init hello_start(void)
-{
-printk(KERN_INFO "Hello, world!\n");
-return 0;
-}
+https://github.com/ZirixCZ/nvimai/assets/49836430/ffc4940e-07d9-4229-81c1-3727b017495f
 
-static void \_\_exit hello_end(void)
-{
-printk(KERN_INFO "Goodbye, world!\n");
-}
-
-module_init(hello_start);
-module_exit(hello_end);
