@@ -52,6 +52,10 @@ You'll also have to add credits to your account. At the time of writing this the
 
 Reload nvim and voilà, you should be able to type the prompt I mentioned at the beginning `:NAI tell me how the universe was created` and get a response back, calming your cravings.
 
+## Next steps 
+Even though I used it in my code examples you might prefer some other, cheaper model. You can find [them all listed here](https://openai.com/pricing). Just copy their name and paste it into the config as `model`.
+
+
 ## Showcase 
 
 https://github.com/ZirixCZ/nvimai/assets/49836430/ffc4940e-07d9-4229-81c1-3727b017495f
