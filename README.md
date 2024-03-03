@@ -2,13 +2,15 @@
 
 > That's a cool name, AY? nvimai. Nvim, Ay? Whatever.
 
-It's a plugin made to help with an AI addiction. Now we can code confidently knowing that at every moment we can go for the quick `:NAI tell me how the universe was created` to calm ourselves down a bit. Definitely being serious there. At it's current state the plugin can be used to communicate with openai and ollama models running locally. You can switch between these two by altering the config. You can also pick specific models, set token limits,.
+It's a plugin made to help with an AI addiction. Now we can code confidently knowing that at every moment we can go for the quick `:NAI tell me how the universe was created` to calm ourselves down a bit. Definitely being serious there. 
+
+At it's current state the plugin can be used to communicate with openai and ollama. You can switch between these two by altering the config.
 
 https://github.com/ZirixCZ/nvimai/assets/49836430/ffc4940e-07d9-4229-81c1-3727b017495f
 
 ## I want it ay!
 
-Alrighty, let's firstly decide if we want to run an ollama model locally or pay for the openai API. The Installation step is the same regardless of which you want to use. After installation choose either Ollama or OpenAI (or both!).
+Alrighty, let's firstly decide if you want to run an ollama model locally or pay for the openai API. The Installation step is the same regardless of which you want to use. After installation choose either Ollama or OpenAI (or both!).
 
 ### Installation
 The plugin can be installed with your package manager of choice. Below there's an example of using Lazy, but Plug or Packer shouldn't be too different.
@@ -44,6 +46,7 @@ Reload nvim and voilà, you should be able to type the prompt I mentioned at the
 
 ## Configuration
 You must specify which integration you're about to use
+
 integration - accepts "ollama" or "openai".
 ```
 {
@@ -54,6 +57,7 @@ integration - accepts "ollama" or "openai".
 
 ### Ollama
 You can specify the model that you want to run. You can list all available models by running `ollama list` in the terminal. For more info refer to the ollama documentation.
+
 model - accepts a string you get as the NAME from `ollama list`
 ```
 {
@@ -65,7 +69,9 @@ model - accepts a string you get as the NAME from `ollama list`
 ```
 ### OpenAI 
 You can find all available models [listed here](https://openai.com/pricing). Just copy their name and paste it into the config as `model`.
+
 model - accepts any available model listed by openai
+
 max_tokens - limit the tokens per request
 ```
 {
